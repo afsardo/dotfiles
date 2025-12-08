@@ -1,0 +1,10 @@
+{
+  
+  "update.mode": "none",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.layoutControl.enabled": false,
+  "workbench.productIconTheme": "fluent-icons",
+  "window.titleBarStyle": "custom",
+  "symbols.hidesExplorerArrows": false,
+}

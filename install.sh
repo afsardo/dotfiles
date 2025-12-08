@@ -20,6 +20,7 @@ PACKAGES=(
   waybar
   uwsm
   omarchy
+  Code
   # add/remove as needed
 )
 
