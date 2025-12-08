@@ -18,6 +18,7 @@ BACKUP_DIR="${HOME}/.dotfiles-backup/$(date +%Y%m%d-%H%M%S)"
 PACKAGES=(
   hypr
   waybar
+  omarchy
   # add/remove as needed
 )
 
@@ -33,6 +34,7 @@ AUR_PKGS=(
   telegram-desktop
   joplin-bin
   notion-app-electron
+  beekeeper-studio-bin
 )
 
 # -------- actions --------
