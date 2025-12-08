@@ -88,7 +88,7 @@
       "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "format-full": "󰂅",
-    "format-time": "H:m",
+    "format-time": "{H}:{m}",
     "tooltip-format-discharging": "{power:>1.0f}W↓ ({time}) {capacity}%",
     "tooltip-format-charging": "{power:>1.0f}W↑ ({time}) {capacity}%",
     "interval": 5,
