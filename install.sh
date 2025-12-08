@@ -18,6 +18,7 @@ BACKUP_DIR="${HOME}/.dotfiles-backup/$(date +%Y%m%d-%H%M%S)"
 PACKAGES=(
   hypr
   waybar
+  uwsm
   omarchy
   # add/remove as needed
 )
