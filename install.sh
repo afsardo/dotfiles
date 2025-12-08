@@ -24,10 +24,15 @@ PACKAGES=(
 PACMAN_PKGS=(
   wget
   keyd
+  libappindicator-gtk3
 )
 
 AUR_PKGS=(
   stow
+  slack-desktop
+  telegram-desktop
+  joplin-bin
+  notion-app-electron
 )
 
 # -------- actions --------
@@ -104,6 +109,9 @@ enable_services() {
     log "Enabling keyd"
     sudo systemctl enable --now keyd || warn "Failed to enable keyd"
   fi
+
+  log "Restarting Hyprland"
+  hyprctl reload
 }
 
 usage() {
@@ -111,7 +119,7 @@ usage() {
 Usage: $(basename "$0") [options]
 
 Options:
-  --all           Install packages + stow + services + optional tweaks
+  --all           Install packages + stow + services
   --packages      Install pacman/AUR packages
   --stow          Stow configured packages
   --services      Enable services (e.g., keyd)
