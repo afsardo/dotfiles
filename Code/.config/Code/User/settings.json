@@ -1,10 +1,128 @@
 {
-  
-  "update.mode": "none",
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "vscode-icons",
   "workbench.layoutControl.enabled": false,
   "workbench.productIconTheme": "fluent-icons",
   "window.titleBarStyle": "custom",
   "symbols.hidesExplorerArrows": false,
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 22,
+  "editor.inlineSuggest.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "explorer.openEditors.visible": 1,
+  "security.workspace.trust.untrustedFiles": "open",
+  "extensions.ignoreRecommendations": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "problems.showCurrentInStatus": true,
+  "tailwindCSS.colorDecorators": false,
+  "tailwindCSS.emmetCompletions": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "rubocop.vscode-rubocop",
+    "editor.formatOnSave": false
+  },
+  "rubocop.commandPath": ".${cwd}bin/run bundle exec rubocop",
+  "rubocop.mode": "onlyRunGlobally",
+  "rubocop.commandArgs": ["-c.rubocop.yml"],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.lintTask.enable": true,
+  "errorLens.followCursor": "activeLine",
+  "explorer.autoRevealExclude": {
+    "**/node_modules": false
+  },
+  "explorer.confirmDelete": false,
+  "solidity.telemetry": true,
+  "errorLens.excludeBySource": ["eslint(@next/next/no-img-element)"],
+  "lldb.suppressUpdateNotifications": true,
+  "git.openRepositoryInParentFolders": "never",
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+  "workbench.colorTheme": "Vercel (Dark)",
+  "editor.quickSuggestionsDelay": 1,
+  "editor.suggest.preview": true,
+  "go.toolsManagement.autoUpdate": true,
+  "rust-analyzer.procMacro.enable": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)|todo!",
+  "vsicons.dontShowNewVersionMessage": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "workbench.sideBar.location": "right",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "[ ]",
+    "REVIEW"
+  ],
+  "todo-tree.highlights.backgroundColourScheme": [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "indigo",
+    "violet",
+    "indigo",
+    "yellow"
+  ],
+  "todo-tree.highlights.foregroundColourScheme": [
+    "white",
+    "black",
+    "black",
+    "white",
+    "white",
+    "white",
+    "black",
+    "white",
+    "white"
+  ],
+  "workbench.activityBar.location": "hidden",
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "git.ignoreMissingGitWarning": true
 }

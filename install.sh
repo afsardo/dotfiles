@@ -104,6 +104,14 @@ stow_dotfiles() {
   sudo stow -d "$REPO_ROOT" -t /etc etc
 }
 
+install_code_extensions() {
+  need code
+  log "Installing VSCode extensions"
+  while IFS= read -r extension; do
+    code --install-extension "$extension" --force
+  done < "$REPO_ROOT/Code/.config/Code/extensions.list"
+}
+
 enable_services() {
   is_arch || return 0
   need sudo
@@ -127,6 +135,7 @@ Options:
   --packages      Install pacman/AUR packages
   --stow          Stow configured packages
   --services      Enable services (e.g., keyd)
+  --code          Install VSCode extensions
   --backup        Detect possible stow conflicts and save logs
   -h, --help      Show this help
 
@@ -137,7 +146,7 @@ EOF
 }
 
 main() {
-  local do_all=0 do_packages=0 do_stow=0 do_services=0 do_backup=0
+  local do_all=0 do_packages=0 do_stow=0 do_services=0 do_backup=0 do_code=0
 
   while (($#)); do
     case "$1" in
@@ -145,6 +154,7 @@ main() {
       --packages) do_packages=1 ;;
       --stow) do_stow=1 ;;
       --services) do_services=1 ;;
+      --code) do_code=1 ;;
       --backup) do_backup=1 ;;
       -h|--help) usage; exit 0 ;;
       *) die "Unknown option: $1" ;;
@@ -152,12 +162,13 @@ main() {
     shift
   done
 
-  ((do_all)) && do_packages=1 do_stow=1 do_services=1
+  ((do_all)) && do_packages=1 do_stow=1 do_services=1 do_code=1
 
   ((do_backup))   && backup_conflicts
   ((do_packages)) && install_pacman && install_aur
   ((do_stow))     && stow_dotfiles
   ((do_services)) && enable_services
+  ((do_code))     && install_code_extensions
 
   log "Done."
 }
