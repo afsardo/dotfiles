@@ -43,9 +43,10 @@
   },
   "[ruby]": {
     "editor.defaultFormatter": "rubocop.vscode-rubocop",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
-  "rubocop.commandPath": ".${cwd}bin/run bundle exec rubocop",
+  "ruby.format": "rubocop",
+  "rubocop.commandPath": "${cwd}/bin/run bundle exec rubocop",
   "rubocop.mode": "onlyRunGlobally",
   "rubocop.commandArgs": ["-c.rubocop.yml"],
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -63,7 +64,6 @@
   "[solidity]": {
     "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
   },
-  "workbench.colorTheme": "Vercel (Dark)",
   "editor.quickSuggestionsDelay": 1,
   "editor.suggest.preview": true,
   "go.toolsManagement.autoUpdate": true,
@@ -124,5 +124,8 @@
   ],
   "workbench.activityBar.location": "hidden",
   "typescript.tsdk": "./node_modules/typescript/lib",
-  "git.ignoreMissingGitWarning": true
+  "git.ignoreMissingGitWarning": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "breadcrumbs.enabled": false,
+  "workbench.colorTheme": "Vercel (Dark)"
 }
