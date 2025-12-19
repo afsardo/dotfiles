@@ -5,7 +5,11 @@
   "spacing": 0,
   "height": 26,
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
-  "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
+  "modules-center": [
+    "clock",
+    "custom/update",
+    "custom/screenrecording-indicator"
+  ],
   "modules-right": [
     "group/tray-expander",
     "bluetooth",
@@ -57,7 +61,8 @@
   "cpu": {
     "interval": 5,
     "format": "󰍛",
-    "on-click": "omarchy-launch-or-focus-tui btop"
+    "on-click": "omarchy-launch-or-focus-tui btop",
+    "on-click-right": "alacritty"
   },
   "clock": {
     "format": "{:L%A %H:%M}",
@@ -88,7 +93,6 @@
       "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "format-full": "󰂅",
-    "format-time": "{H}:{m}",
     "tooltip-format-discharging": "{power:>1.0f}W↓ ({time}) {capacity}%",
     "tooltip-format-charging": "{power:>1.0f}W↑ ({time}) {capacity}%",
     "interval": 5,
