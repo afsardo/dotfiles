@@ -30,14 +30,20 @@
   opacity: 0.5;
 }
 
-#cpu,
 #battery,
-#pulseaudio,
 #custom-omarchy,
 #custom-screenrecording-indicator,
 #custom-update {
   min-width: 12px;
-  margin: 0 7.5px;
+  margin: 0 5px 0 0;
+}
+
+#cpu {
+  margin-right: 5px;
+}
+
+#pulseaudio {
+  margin-right: 12px;
 }
 
 #tray {
@@ -45,11 +51,11 @@
 }
 
 #bluetooth {
-  margin-right: 17px;
+  margin-right: 15px;
 }
 
 #network {
-  margin-right: 13px;
+  margin-right: 12px;
 }
 
 #custom-expand-icon {
@@ -91,3 +97,4 @@ tooltip {
 #custom-voxtype.recording {
   color: #a55555;
 }
+
