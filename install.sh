@@ -19,7 +19,7 @@ PACKAGES=(
   hypr
   waybar
   uwsm
-  omarchy
+  #omarchy
   Code
   # add/remove as needed
 )
